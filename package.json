@@ -1,0 +1,26 @@
+{
+  "name": "bedrock",
+  "version": "1.0.0",
+  "description": "A baseline project template and stuff... Also Flintstones.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonmitton/bedrock.git"
+  },
+  "keywords": ["sass", "scss"],
+  "author": "Devon Mitton <devonmitton@gmail.com> (http://devonmitton.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devonmitton/bedrock/issues"
+  },
+  "homepage": "https://github.com/devonmitton/bedrock#readme",
+  "dependencies": {
+    "gulp":              "^3.9.0",
+    "gulp-sass":         "^2.0.4",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sourcemaps":   "^1.5.2",
+    "gulp-livereload":   "^3.8.0"
+  }
+}
