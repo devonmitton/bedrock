@@ -14,7 +14,19 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist/css/'));
 });
 
-// Default: watch the SASS files for changes
-gulp.task('default', function() {
+// HTML
+gulp.task('html', function() {
+  gulp.src('src/**/*.html')
+    .pipe(gulp.dest('dist/'));
+});
+
+// Build Everything
+gulp.task('build', ['styles', 'html']);
+
+// Watch for SASS changes
+gulp.task('watch', function() {
   gulp.watch('src/css/**/*.scss', ['styles']);
 });
+
+// Default: Build Everything
+gulp.task('default', ['build']);
