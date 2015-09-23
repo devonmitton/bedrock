@@ -1,0 +1,53 @@
+// =============================================================================
+// Helpful Utility Classes and Tricks
+// ----------------------------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+// Clearfix "Group"
+// https://css-tricks.com/snippets/css/clear-fix/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Hidden
+// https://html5boilerplate.com/
+.hidden {
+  display: none!important;
+}
+
+// Visually Hidden, Available to Screen Readers
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // Focusable from the keyboard
+  // https://www.drupal.org/node/897638
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+// Visually hidden, but retains layout
+// https://html5boilerplate.com/
+.invisible {
+    visibility: hidden;
+}

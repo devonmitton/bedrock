@@ -1,0 +1,77 @@
+// =============================================================================
+// Baseline HTML Styles - Based on Normalize.css
+// ---------------------------------------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+// Border-Box all the things.
+* {
+  box-sizing: border-box;
+
+  &:before, *:after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+::selection {
+  background: $selection-bg-color;
+  color: $selection-font-color;
+  text-shadow: none;
+}
+
+body {
+  margin: 0;
+}
+
+// https://html5boilerplate.com/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+// HTML5 display definitions
+// -----------------------------------------------------------------------------
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+img, svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}

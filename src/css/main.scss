@@ -1,0 +1,35 @@
+// =============================================================================
+// Bedrock - A baseline project template and stuff... Also Flintstones.
+// --------------------------------------------------------------------
+// @version 1.0.0
+// @author  Devon Mitton <devonmitton@gmail.com>
+// =============================================================================
+
+
+// Variables and Junk
+// -----------------------------------------------------------------------------
+
+$base-serif-family:      serif      !default;
+$base-sans-serif-family: sans-serif !default;
+$base-monospace-family:  monospace  !default;
+
+// Base Typography Settings
+$base-font-size:   16px                    !default;
+$base-line-height: 1.5                     !default; // 16 x 1.5 = 24
+$base-font-weight: 300                     !default; // Light, if available
+$base-font-family: $base-sans-serif-family !default;
+$base-font-color:  #333                    !default;
+
+// Selection stuff;
+$selection-bg-color:   #fe57a1 !default; // this could be a brand color;
+$selection-font-color: #fff    !default;
+
+
+// Bring in just enough stuff for beautiful typography.
+@import "base/html";
+@import "base/type";
+@import "base/helpers";
+
+// Extras
+// @import "base/tables";
+// @import "base/forms";

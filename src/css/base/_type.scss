@@ -1,0 +1,112 @@
+// =============================================================================
+// Baseline Type Styles - Based on Normalize.css
+// ---------------------------------------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+
+// Variables
+// -----------------------------------------------------------------------------
+
+// Default base font size is 16px. These units are caluclated based on that.
+
+$fs-huge:      3.0000rem; // 48
+$fs-xxxxlarge: 2.2500rem; // 36
+$fs-xxxlarge:  1.2500rem; // 30
+$fs-xxlarge:   1.7500rem; // 28
+$fs-xlarge:    1.5000rem; // 24
+$fs-large:     1.1250rem; // 18
+$fs-normal:    1.0000rem; // 16
+$fs-small:     0.8750rem; // 14
+$fs-xsmall:    0.8125rem; // 13
+$fs-xxsmall:   0.7500rem; // 12
+$fs-xxxsmall:  0.6875rem; // 11
+$fs-xxxxsmall: 0.6250rem; // 10
+$fs-tiny:      0.5000rem; //  8
+
+// Headings
+// -----------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 { margin: 0.67rem 0; }
+h1 { font-size: $fs-xxxxlarge; }
+h2 { font-size: $fs-xxxlarge; }
+h3 { font-size: $fs-xxlarge; }
+h4 { font-size: $fs-xlarge; }
+h5 { font-size: $fs-large; }
+h6 { font-size: $fs-normal; }
+
+
+// Blocks
+// -----------------------------------------------------------------------------
+p {
+  margin: 1em 0;
+}
+
+ol, ul {
+  margin: 1em 0 1em 2.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+
+// Semantics
+// -----------------------------------------------------------------------------
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup { top: -0.5rem; }
+sub { bottom: -0.25rem; }
+
+
+// Helper Classes
+// -----------------------------------------------------------------------------
+.lead { font-size: $fs-xlarge; font-weight: 300; }
+.mute { opacity: 0.6; }
+.caps { text-transform: uppercase; }
+
+.h1 { @extend h1; }
+.h2 { @extend h2; }
+.h3 { @extend h3; }
+.h4 { @extend h4; }
+.h5 { @extend h5; }
+.h6 { @extend h6; }
+
+.ta-left    { text-align: left; }
+.ta-right   { text-align: right; }
+.ta-center  { text-align: center; }
+.ta-justify { text-align: justify; }
+
+.ls-alpha   { list-style: lower-alpha; }
+.ls-decimal { list-style: decimal; }
+.ls-disc    { list-style: disc; }
+.ls-circle  { list-style: circle; }
+.ls-square  { list-style: square; }
+.ls-none    { list-style: none; }

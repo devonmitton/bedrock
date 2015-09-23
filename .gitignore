@@ -1,2 +1,6 @@
+# OS X Stuff
+.DS_Store
+
+# SASS Stuff
 .sass-cache
 *.css.map
