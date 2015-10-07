@@ -20,13 +20,13 @@ gulp.task('html', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-// Build Everything
-gulp.task('build', ['styles', 'html']);
-
 // Watch for SASS changes
-gulp.task('watch', function() {
+gulp.task('watch:sass', function() {
   gulp.watch('src/css/**/*.scss', ['styles']);
 });
+
+// Build Everything
+gulp.task('build', ['styles', 'html']);
 
 // Default: Build Everything
 gulp.task('default', ['build']);
