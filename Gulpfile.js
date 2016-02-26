@@ -5,28 +5,22 @@ var sourcemaps   = require('gulp-sourcemaps');
 
 
 // Transpile SASS, with Autoprefixer and Sourcemaps
-gulp.task('styles', function() {
-  gulp.src('src/css/**/*.scss')
+gulp.task('sass', function() {
+  gulp.src('_src/css/**/*.scss')
     .pipe(sourcemaps.init())
       .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
       .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/css/'));
-});
-
-// HTML
-gulp.task('html', function() {
-  gulp.src('src/**/*.html')
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('css/'));
 });
 
 // Watch for SASS changes
 gulp.task('watch:sass', function() {
-  gulp.watch('src/css/**/*.scss', ['styles']);
+  gulp.watch('_src/css/**/*.scss', ['styles']);
 });
 
 // Build Everything
-gulp.task('build', ['styles', 'html']);
+gulp.task('build', ['sass']);
 
 // Default: Build Everything
 gulp.task('default', ['build']);

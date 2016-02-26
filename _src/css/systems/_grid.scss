@@ -1,0 +1,66 @@
+// =============================================================================
+// Basic Grid System
+// -----------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+.grid, .row {
+  @extend .content;
+  @extend .group;
+  clear: both;
+}
+
+.column {
+  width: 100%;
+  float: left;
+  padding: 10px;
+
+  .grid {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+// Column Sizes
+.full    { width: 100%; }
+.half    { width: 50%; }
+.third   { width: 33.3333%; }
+.quarter { width: 25%; }
+.fifth   { width: 20%; }
+.sixth   { width: 16.6667%; }
+
+// Column Combinations
+.two-fifths     { width: 40%; }
+.two-quarters   { @extend .half; }
+.three-sixths   { @extend .half; }
+.three-fifths   { width: 60%; }
+.two-thirds     { width: 66.6667%; }
+.four-sixths    { @extend .two-thirds; }
+.three-quarters { width: 75%; }
+.four-fifths    { width: 80%; }
+.five-sixths    { width: 83.3334% }
+
+// Column Spacing
+.compact {
+  .column { padding: 5px; }
+}
+
+.cozy {
+  .column { padding: 10px; }
+}
+
+.comfortable {
+  .column { padding: 20px; }
+}
+
+
+// Breakpoints
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    padding: 0px 0px 20px;
+    float: none;
+  }
+}

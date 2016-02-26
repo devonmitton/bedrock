@@ -1,0 +1,29 @@
+// =============================================================================
+// Media Module
+// ------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+.media {
+  @extend .content;
+
+  margin: 0;
+
+  .media-item {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .media-description {
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.875em;
+  }
+
+}

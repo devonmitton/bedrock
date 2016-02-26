@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  background-color: rgba(255,255,255, 0.8);
+  border: 1px solid rgba(0,0,0, 0.05);
+
+  font-family: inherit;
+  font-size: inherit;
+  font-color: inherit;
+  text-decoration: none;
+
+  @include tappable-item-size;
+
+  &:hover {
+    border-color: rgba(0,0,0, 0.45);
+  }
+
+  &:active, &:focus {
+    border-color: rgba(0,0,0, 0.65);
+    outline: none;
+  }
+
+}

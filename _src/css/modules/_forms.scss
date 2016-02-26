@@ -1,0 +1,23 @@
+::placeholder {
+  color: rgba(0,0,0,0.45);
+}
+
+.text-field {
+
+  background-color: rgba(0,0,0,0.05);
+  border: none;
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+  font-family: inherit;
+
+  @include tappable-item-size;
+  line-height: $tappable-item-height;
+
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,0.45);
+    background-color: rgba(0,0,0,0.02);
+  }
+}

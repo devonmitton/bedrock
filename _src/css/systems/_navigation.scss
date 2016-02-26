@@ -1,0 +1,42 @@
+// =============================================================================
+// Navigation Systems
+// ------------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+.nav {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0 0.75em;
+
+  .nav-item, .nav-link {
+    display: block;
+  }
+
+  .nav-link, .nav-stub {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    @include tappable-item-size;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+  .nav-active-item {
+    // font-weight: bold;
+  }
+}
+
+.horizontal {
+  .nav-item {
+    display: inline-block;
+  }
+  // @extend .group;
+}

@@ -1,0 +1,16 @@
+// =============================================================================
+// Functions and Mixins
+// --------------------
+// @version - 1.0.0
+// @author  - Devon Mitton <devonmitton@gmail.com>
+// @package - Bedrock
+// =============================================================================
+
+// Tappable Item Dimensions: Buttons, Inputs, Navigations
+$tappable-item-height: 2.5em !default;
+$tappable-item-spacing: 0.5em 0.75em !default;
+
+@mixin tappable-item-size {
+  height: $tappable-item-height;
+  padding: $tappable-item-spacing;
+}

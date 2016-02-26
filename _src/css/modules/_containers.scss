@@ -1,0 +1,27 @@
+// =============================================================================
+// Containers
+// ----------
+// @version 1.0.0
+// @author  Devon Mitton <devonmitton@gmail.com>
+// =============================================================================
+
+.content {
+  position: relative;
+}
+
+.context {
+  @extend .content;
+  overflow: hidden;
+}
+
+.container {
+  @extend .content;
+  max-width: $container-max-width;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  &.half {
+    max-width: $container-max-width/2;
+    width: auto; // becuase grid uses 'half'
+  }
+}
