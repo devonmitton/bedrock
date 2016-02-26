@@ -16,7 +16,7 @@ gulp.task('sass', function() {
 
 // Watch for SASS changes
 gulp.task('watch:sass', function() {
-  gulp.watch('_src/css/**/*.scss', ['styles']);
+  gulp.watch('_src/css/**/*.scss', ['sass']);
 });
 
 // Build Everything

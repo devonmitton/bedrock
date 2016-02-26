@@ -10,8 +10,8 @@
 // -----------------------------------------------------------------------------
 
 // Colors
-$brand-primary: ;
-$brand-secondary: ;
+$brand-primary: #fe57a1;
+$brand-secondary: #333;
 
 $base-serif-family:      serif      !default;
 $base-sans-serif-family: sans-serif !default;
@@ -25,7 +25,7 @@ $base-font-family: $base-sans-serif-family !default;
 $base-font-color:  #333                    !default;
 
 // Selection stuff;
-$selection-bg-color:   opacity($brand-primary, 0.75) !default; // this could be a brand color;
+$selection-bg-color:   opacify($brand-primary, 0.75) !default; // this could be a brand color;
 $selection-font-color: #fff    !default;
 
 
